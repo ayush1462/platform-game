@@ -172,7 +172,7 @@ function update() {
   if (jump && player.body.touching.down) {
     player.setVelocityY(-500);
   }
-  if (cursors.left.isDown) {
+  if (cursors.up.isDown && player.body.touching.down) {
     player.setVelocityY(-500);
   }
 }
